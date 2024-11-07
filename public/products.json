@@ -1,0 +1,362 @@
+[
+   
+    {
+        "product_id": 102,
+        "product_title": "Noise Cancelling Earbuds",
+        "product_image": "https://i.ibb.co.com/vwz1X5G/Screenshot-2024-11-06-183428.png",
+        "category": "Accessories",
+        "price": 79.99,
+        "description": "High-quality earbuds with active noise cancellation for immersive sound.",
+        "Specification": [
+            "Bluetooth 5.1",
+            "Up to 20 hours battery life",
+            "IPX4 water resistance"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 204,
+        "product_title": "Convertible 2-in-1 Laptop",
+        "product_image": "https://i.ibb.co.com/TMXTyx2/Screenshot-2024-11-06-184656.png",
+        "category": "Laptops",
+        "price": 749.99,
+        "description": "Versatile 2-in-1 laptop that works as both laptop and tablet.",
+        "Specification": [
+            "14-inch touchscreen",
+            "128GB SSD",
+            "Intel Core i5",
+            "8GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+
+    {
+        "product_id": 306,
+        "product_title": "Apple Watch Series 6",
+        "product_image": "https://i.ibb.co.com/d487Gwd/Screenshot-2024-11-06-185937.png",
+        "category": "Smart-watches",
+        "price": 399.99,
+        "description": "Advanced smartwatch with health monitoring features.",
+        "Specification": [
+            "ECG app",
+            "Blood oxygen monitoring",
+            "Always-on display"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },   
+
+    {
+        "product_id": 206,
+        "product_title": "2-in-1 Chromebook",
+        "product_image": "https://i.ibb.co.com/3ykksFt/Screenshot-2024-11-06-184927.png",
+        "category": "Laptops",
+        "price": 399.99,
+        "description": "Affordable 2-in-1 Chromebook perfect for everyday use.",
+        "Specification": [
+            "11.6-inch touchscreen",
+            "64GB eMMC storage",
+            "Intel Celeron processor",
+            "4GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+
+    {
+        "product_id": 103,
+        "product_title": "Magnetic Car Mount",
+        "product_image": "https://i.ibb.co.com/4ZWHgxP/Screenshot-2024-11-06-183606.png",
+        "category": "Accessories",
+        "price": 54.99,
+        "description": "Easy-to-use magnetic phone mount for safe driving.",
+        "Specification": [
+            "Strong magnet",
+            "360-degree rotation",
+            "Universal compatibility"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+
+    {
+        "product_id": 304,
+        "product_title": "Xiaomi Mi 11",
+        "product_image": "https://i.ibb.co.com/LYXHtRQ/Screenshot-2024-11-06-185623.png",
+        "category": "Phones",
+        "price": 649.99,
+        "description": "Powerful smartphone with great features at an affordable price.",
+        "Specification": [
+            "6.81-inch AMOLED display",
+            "128GB storage",
+            "Snapdragon 888",
+            "Triple-camera system"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+
+    {
+        "product_id": 104,
+        "product_title": "Wireless Bluetooth Speaker",
+        "product_image": "https://i.ibb.co.com/ZTjZ1F7/Screenshot-2024-11-06-183745.png",
+        "category": "Accessories",
+        "price": 89.99,
+        "description": "Portable Bluetooth speaker with powerful sound and deep bass.",
+        "Specification": [
+            "Bluetooth 5.0",
+            "10 hours playtime",
+            "Water-resistant design"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 105,
+        "product_title": "Fast Charging Cable 3-Pack",
+        "product_image": "https://i.ibb.co.com/JsFzntz/Screenshot-2024-11-06-183940.png",
+        "category": "Accessories",
+        "price": 52.99,
+        "description": "Durable and fast charging cables in a convenient 3-pack.",
+        "Specification": [
+            "USB-C to USB-C",
+            "Supports 3A fast charging",
+            "Braided design"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 106,
+        "product_title": "Laptop Sleeve Case",
+        "product_image": "https://i.ibb.co.com/tZQhQxX/Screenshot-2024-11-06-184101.png",
+        "category": "Accessories",
+        "price": 55.00,
+        "description": "Protective sleeve case for laptops up to 15 inches.",
+        "Specification": [
+            "Water-resistant material",
+            "Multiple pockets",
+            "Lightweight design"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 201,
+        "product_title": "UltraBook Slim 13",
+        "product_image": "https://i.ibb.co.com/T0whN4G/Screenshot-2024-11-06-184219.png",
+        "category": "Laptops",
+        "price": 899.99,
+        "description": "Lightweight, high-performance laptop with long battery life.",
+        "Specification": [
+            "13-inch Full HD display",
+            "256GB SSD",
+            "Intel Core i5",
+            "8GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+
+    {
+        "product_id": 101,
+        "product_title": "XCharge Power Bank 10000mAh",
+        "product_image": "https://i.ibb.co.com/f0xkbWD/Screenshot-2024-11-06-182002.png",
+        "category": "Accessories",
+        "price": 59.99,
+        "description": "Compact and portable power bank for fast charging on the go.",
+        "Specification": [
+            "10000mAh capacity",
+            "USB-C and USB-A output",
+            "LED battery indicator"
+        ],
+        "availability": true,
+        "rating": 4.5
+    }, 
+
+
+    {
+        "product_id": 202,
+        "product_title": "Gaming Beast 17",
+        "product_image": "https://i.ibb.co.com/dcGGWSf/Screenshot-2024-11-06-184408.png",
+
+        "category": "Laptops",
+        "price": 1299.99,
+        "description": "High-end gaming laptop with powerful graphics and cooling system.",
+        "Specification": [
+            "17-inch FHD display",
+            "1TB SSD",
+            "Intel Core i7",
+            "16GB RAM",
+            "RTX 3060 GPU"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 203,
+        "product_title": "WorkStation Pro 15",
+        "product_image": "https://i.ibb.co.com/bW8hjJq/Screenshot-2024-11-06-184552.png",
+        "category": "Laptops",
+        "price": 1199.99,
+        "description": "Powerful workstation for professionals with multitasking capabilities.",
+        "Specification": [
+            "15-inch Retina display",
+            "512GB SSD",
+            "Intel Core i9",
+            "32GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    
+    {
+        "product_id": 205,
+        "product_title": "Business Laptop 15",
+        "product_image": "https://i.ibb.co.com/cvHLrDm/Screenshot-2024-11-06-184816.png",
+        "category": "Laptops",
+        "price": 849.99,
+        "description": "Ideal laptop for business professionals with a sleek design.",
+        "Specification": [
+            "15.6-inch FHD display",
+            "512GB SSD",
+            "Intel Core i7",
+            "16GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+   
+    {
+        "product_id": 301,
+        "product_title": "Samsung Galaxy S21",
+        "product_image": "https://i.ibb.co.com/nCXT00q/Screenshot-2024-11-06-185103.png",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "Premium smartphone with an advanced camera and display.",
+        "Specification": [
+            "6.2-inch FHD+ display",
+            "128GB storage",
+            "Exynos 2100",
+            "Triple-camera system"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 302,
+        "product_title": "Google Pixel 6",
+        "product_image": "https://i.ibb.co.com/TRLHSs9/Screenshot-2024-11-06-185310.png",
+        "category": "Phones",
+        "price": 599.99,
+        "description": "Smartphone featuring Google's latest AI technology.",
+        "Specification": [
+            "6.4-inch FHD+ display",
+            "128GB storage",
+            "Google Tensor chip",
+            "Dual-camera system"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 303,
+        "product_title": "OnePlus 9",
+        "product_image": "https://i.ibb.co.com/c23bzPx/Screenshot-2024-11-06-185455.png",
+        "category": "Phones",
+        "price": 729.99,
+        "description": "Flagship smartphone with an incredible camera and performance.",
+        "Specification": [
+            "6.55-inch Fluid AMOLED display",
+            "128GB storage",
+            "Snapdragon 888",
+            "Triple-camera system"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    
+    {
+        "product_id": 305,
+        "product_title": "Fitbit Versa 3",
+        "product_image": "https://i.ibb.co.com/ZdKThNW/Screenshot-2024-11-06-185837.png",
+        "category": "Smart-watches",
+        "price": 229.99,
+        "description": "Smartwatch with heart rate tracking and GPS.",
+        "Specification": [
+            "Built-in GPS",
+            "24/7 heart rate tracking",
+            "Sleep tracking"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+   
+    {
+        "product_id": 307,
+        "product_title": "Garmin Forerunner 245",
+        "product_image": "https://i.ibb.co.com/4M6bmTR/Screenshot-2024-11-06-190105.png",
+        "category": "Smart-watches",
+        "price": 349.99,
+        "description": "Running smartwatch with GPS and advanced training features.",
+        "Specification": [
+            "GPS tracking",
+            "Heart rate monitoring",
+            "Smart notifications"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    
+   
+    {
+        "product_id": 401,
+        "product_title": "MacBook Air M1",
+        "product_image": "https://i.ibb.co.com/dMRS3GB/Screenshot-2024-11-06-190209.png",
+        "category": "MacBook",
+        "price": 999.99,
+        "description": "Lightweight MacBook with M1 chip for superior performance.",
+        "Specification": [
+            "13.3-inch Retina display",
+            "256GB SSD",
+            "8GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 402,
+        "product_title": "MacBook Pro 16",
+        "product_image": "https://i.ibb.co.com/Fxd6x1P/Screenshot-2024-11-06-190334.png",
+        "category": "MacBook",
+        "price": 2399.99,
+        "description": "Powerful MacBook for professionals with advanced features.",
+        "Specification": [
+            "16-inch Retina display",
+            "1TB SSD",
+            "16GB RAM",
+            "M1 Pro chip"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 403,
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/8j5qctB/Screenshot-2024-11-06-190436.png",
+        "category": "MacBook",
+        "price": 1999.99,
+        "description": "Compact and powerful MacBook for creative professionals.",
+        "Specification": [
+            "14-inch Retina display",
+            "512GB SSD",
+            "16GB RAM",
+            "M1 chip"
+        ],
+        "availability": true,
+        "rating": 4.8
+    }
+    
+]
