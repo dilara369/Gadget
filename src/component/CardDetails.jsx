@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Heading from "./Heading";
-import { addCard, getAllcard } from "../Storage";
+import { addCard, addWish, getAllcard } from "../Storage";
 import { FcRating } from "react-icons/fc";
 import { FaCartArrowDown } from "react-icons/fa";
 import { FcLike } from "react-icons/fc";
@@ -27,7 +27,8 @@ const CardDetails = () => {
     // react can read again and done fullfill so i put it here again 
   };
   const handeLove = (card) => {
-    addCard(card);
+    
+    addWish(card);
     setIsadd(true);
     // react can read again and done fullfill so i put it here again 
   };

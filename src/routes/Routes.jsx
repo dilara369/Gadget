@@ -9,6 +9,7 @@ import ShoppingCard from "../component/ShoppingCard";
 import AboutUs from "../pages/AboutUs";
 import NotFound from "../component/404/NotFound";
 import { Helmet } from "react-helmet";
+import AddFavourite from "../component/AddFavourite";
 
 
 const router = createBrowserRouter([
@@ -106,7 +107,20 @@ const router = createBrowserRouter([
                   <ShoppingCard></ShoppingCard>
               </>
           ),
-            // loader:()=> fetch("../products.json"),
+           
+            
+          },
+          {
+            path:"/dashboard/Favourite",
+            element: (
+              <>
+                  <Helmet>
+                      <title>MyFavourite - My Website</title>
+                  </Helmet>
+                  <AddFavourite></AddFavourite>
+              </>
+          ),
+           
             
           },
         ]

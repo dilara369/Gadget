@@ -2,15 +2,15 @@ import { MdDelete } from "react-icons/md";
 
 const ShoppingCard = ({ handleRemove, card, handleSort }) => {
   console.log(card);
-
-  // const totalPrice = cards.reduce((total, currentCard) => total + currentCard.price, 0);
+ 
+  const totalPrice = card && card.length > 0 ? card.reduce((total, currentCard) => total + currentCard.price, 0) : 0;
 
   return (
     <div>
       <div className=" w-5/6 mx-auto flex justify-between mt-10">
         <p className="text-2xl font-bold">Cart</p>
         <div className="flex items-center gap-5">
-          <h5 className="font-bold">Total Price:${}</h5>
+          <h5 className="font-bold">Total Price:${totalPrice}</h5>
           <button
             onClick={() => handleSort()}
             className="rounded-full border-purple-950 px-4 py-1 bg-gradient-to-tr from-purple-500 to-purple-200 "
@@ -34,7 +34,7 @@ const ShoppingCard = ({ handleRemove, card, handleSort }) => {
               <h1 className="text-lg font-bold">{item.product_title}</h1>
               <p>{item.description}</p>
               <p className="font-semibold">Price:${item.price}</p>
-              <MdDelete onClick={()=>handleRemove()}  size={30} />
+              <MdDelete onClick={()=>handleRemove(item.product_id)}  size={30} />
             </div>
           
           </div>

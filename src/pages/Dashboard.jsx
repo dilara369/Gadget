@@ -1,21 +1,41 @@
 import React, { useEffect, useState } from "react";
 import Heading from "../component/Heading";
-import { getAllcard, removeCard } from "../Storage";
+import { getAllcard, getAllWish, removeCard, removeWish } from "../Storage";
 import { NavLink, } from "react-router-dom";
 import ShoppingCard from "../component/ShoppingCard";
+import AddFavourite from "../component/AddFavourite";
 
 const Dashboard = () => {
         
     const [card, setCard] = useState()
     useEffect(() => {
         const wantAdd =getAllcard()
+       
       setCard(wantAdd)
+     
     }, [])
+
+   
   
     const handleRemove = (product_id) => {
       removeCard(product_id)
       const wantAdd = getAllcard()
       setCard(wantAdd)
+    }
+
+
+    const [wish, setWish] = useState()
+    useEffect(() => {
+       
+        const wantWish = getAllWish()
+      
+      setWish(wantWish)
+    }, [])
+
+    const handleWish = (product_id) => {
+        removeWish(product_id)
+      const wantWish = getAllWish()
+      setWish(wantWish)
     }
 
     const handleSort = () => {
@@ -53,7 +73,7 @@ const Dashboard = () => {
         className={({ isActive }) =>
             `tab ${isActive ? 'bg-white , text-purple-800 , font-bold ':'bg-purple-600'} relative top-1/2 shadow-xl border border-white px-8 py-2 rounded-full text-white`
         }
-        to="/wishlist"
+        to="/dashboard/Favourite"
     >
         Wishlist
     </NavLink>
@@ -62,6 +82,8 @@ const Dashboard = () => {
       </div>
 
 <ShoppingCard handleRemove={handleRemove} handleSort={handleSort}  card={card} ></ShoppingCard>
+
+<AddFavourite wish={wish} handleWish={handleWish}></AddFavourite>
 
     </div>
   );
