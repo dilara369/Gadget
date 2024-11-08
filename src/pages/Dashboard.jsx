@@ -12,11 +12,19 @@ const Dashboard = () => {
       setCard(wantAdd)
     }, [])
   
-    const handleRemove = product_id => {
+    const handleRemove = (product_id) => {
       removeCard(product_id)
       const wantAdd = getAllcard()
       setCard(wantAdd)
     }
+
+    const handleSort = () => {
+        
+        // sort by price
+        const sorted = [...card].sort((a, b) => b.price - a.price)
+        setCard(sorted)
+  }
+
 
   return (
     <div>
@@ -53,7 +61,7 @@ const Dashboard = () => {
      
       </div>
 
-<ShoppingCard handleRemove={handleRemove} key={card.product_id} card={card} ></ShoppingCard>
+<ShoppingCard handleRemove={handleRemove} handleSort={handleSort}  card={card} ></ShoppingCard>
 
     </div>
   );

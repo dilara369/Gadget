@@ -36,7 +36,7 @@ const addCard = card =>{
 
 const removeCard = product_id =>{
     const wantAdd =getAllcard()
-    const isExist =wantAdd.filter(item=> item.product_id !=product_id) 
+    const isExist =wantAdd.filter(item=> item.product_id ==product_id) 
     localStorage.setItem('wantAdd', JSON.stringify(isExist))
     toast.success('Successfully Removed!')
 

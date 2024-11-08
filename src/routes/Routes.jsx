@@ -8,6 +8,7 @@ import CardDetails from "../component/CardDetails";
 import ShoppingCard from "../component/ShoppingCard";
 import AboutUs from "../pages/AboutUs";
 import NotFound from "../component/404/NotFound";
+import { Helmet } from "react-helmet";
 
 
 const router = createBrowserRouter([
@@ -17,17 +18,38 @@ const router = createBrowserRouter([
       children:[
         {
              path:"/",
-             element:<Home></Home>,
+             element:(
+              <>
+                  <Helmet>
+                      <title>Home - My Website</title>
+                  </Helmet>
+                  <Home></Home>
+              </>
+          ),
              loader:()=> fetch("../category.json"),
              children:[
               {
                 path:'/',
-                element:<ProductCard> </ProductCard>,
+                element:(
+                  <>
+                      <Helmet>
+                          <title>Product Cards - My Website</title>
+                      </Helmet>
+                      <ProductCard />
+                  </>
+              ),
                 loader:()=> fetch("../products.json"),
               },
               {
                 path:'/product/:category',
-                element:<ProductCard> </ProductCard>,
+                element:(
+                  <>
+                      <Helmet>
+                          <title>Product Category - My Website</title>
+                      </Helmet>
+                      <ProductCard />
+                  </>
+              ),
                 loader:()=> fetch("../products.json"),
               },
              
@@ -38,7 +60,14 @@ const router = createBrowserRouter([
       {
                
         path:'/Details/:product_id',
-        element:<CardDetails></CardDetails>,
+        element:(
+          <>
+              <Helmet>
+                  <title>Product Details - My Website</title>
+              </Helmet>
+              <CardDetails></CardDetails>
+          </>
+      ),
         loader:()=> fetch("../products.json"),
       },
 
@@ -46,16 +75,37 @@ const router = createBrowserRouter([
 
       {
         path:"/statistic",
-        element:<Statistic></Statistic>,
+        element:(
+          <>
+              <Helmet>
+                  <title>Statistics - My Website</title>
+              </Helmet>
+              <Statistic></Statistic>
+          </>
+      ),
     },
     {
         path:"/dashboard",
-        element:<Dashboard></Dashboard>,
+        element:(
+          <>
+              <Helmet>
+                  <title>Dashboard - My Website</title>
+              </Helmet>
+              <Dashboard></Dashboard>
+          </>
+      ),
         
         children:[
           {
             path:"/dashboard/Shopping",
-            element: <ShoppingCard></ShoppingCard>,
+            element: (
+              <>
+                  <Helmet>
+                      <title>Shopping Cart - My Website</title>
+                  </Helmet>
+                  <ShoppingCard></ShoppingCard>
+              </>
+          ),
             // loader:()=> fetch("../products.json"),
             
           },
@@ -64,12 +114,26 @@ const router = createBrowserRouter([
 
 {
   path:'/About Us',
-  element:<AboutUs></AboutUs>,
+  element:(
+    <>
+        <Helmet>
+            <title>About Us - My Website</title>
+        </Helmet>
+        <AboutUs></AboutUs>
+    </>
+),
 },
 
 {
   path:'/404',
-  element:<NotFound></NotFound>,
+  element:(
+    <>
+        <Helmet>
+            <title>404 - Page Not Found</title>
+        </Helmet>
+        <NotFound></NotFound>
+    </>
+),
 }
 
 
