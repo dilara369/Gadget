@@ -24,6 +24,7 @@ const CardDetails = () => {
   const handeAdd = (card) => {
     addCard(card);
     setIsadd(true);
+    // react can read again and done fullfill so i put it here again 
   };
 
   return (
@@ -64,7 +65,9 @@ const CardDetails = () => {
             <p className="bg-blue-200 rounded-full w-6 h-6 text-center">{card.rating}</p>
           </div>
           <div className="flex items-center gap-3">
-            <button className="bg-purple-900 rounded-full text-white px-5 py-1 flex items-center gap-2">Add To Cart  <FaCartArrowDown />  </button>
+            <button
+             disabled={isadd}
+            onClick={()=> handeAdd(card)} className="bg-purple-900 rounded-full text-white px-5 py-1 flex items-center gap-2">Add To Cart  <FaCartArrowDown />  </button>
             <FcLike size={35} />
             
           </div>

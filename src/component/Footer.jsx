@@ -5,15 +5,16 @@ const Footer = () => {
         <div>
 
 
-<footer className="footer p-10 bg-gray-200 text-gray-700 mt-10">
+<footer className="footer flex flex-col p-10 bg-gray-200 text-gray-700 mt-10">
 
-                   <div className='text-center '>
+                   <div className='flex flex-col justify-center items-center w-full '>
+
                     <h1 className='text-2xl font-bold '>Gadget Heaven</h1>
                     <p >Leading the way in cutting-edge technology and innovation.</p>
-                </div> 
+                    </div> 
 
 
-  <div className="flex justify-around w-full">
+  <div className="flex justify-around w-full text-center">
     <nav className="space-y-2">
       <h6 className="footer-title font-bold text-lg mb-2">Services</h6>
       <a href="#" className="link link-hover block">Product Support</a>
@@ -36,6 +37,7 @@ const Footer = () => {
       <a href="#" className="link link-hover block">Cookie Policy</a>
     </nav>
   </div>
+
 </footer>
 
         </div>
