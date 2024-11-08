@@ -68,9 +68,38 @@ const Navbar = () => {
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 gap-10">
-              <Link to="/"> Home</Link>
-              <Link to="/statistic"> Statistics</Link>
-              <Link to="/dashboard"> Dashboard</Link>
+            <NavLink
+                  className={({ isActive }) =>
+                    ` font-bold ${
+                      isActive ? "text-warning" : "hover:text-warning"
+                    }`
+                  }
+                  to="/"
+                >
+                  Home
+                </NavLink>
+              <NavLink
+                  className={({ isActive }) =>
+                    ` font-bold ${
+                      isActive ? "text-warning" : "hover:text-warning"
+                    }`
+                  }
+                  to="/statistic"
+                >
+                  
+                  Statistics
+                </NavLink>
+              <NavLink
+                  className={({ isActive }) =>
+                    ` font-bold ${
+                      isActive ? "text-warning" : "hover:text-warning"
+                    }`
+                  }
+                  to="/dashboard"
+                >
+                  
+                  Dashboard
+                </NavLink>
             </ul>
           </div>
           <div className="navbar-end flex gap-3" >

@@ -18,7 +18,6 @@ const getAllcard=()=>{
 
 }
 
-
 const addCard = card =>{
     // console.log(card)
     // const wantAdd =[]
@@ -35,3 +34,4 @@ const addCard = card =>{
 }
 
 export  {addCard , getAllcard} 
+

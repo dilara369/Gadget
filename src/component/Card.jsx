@@ -21,7 +21,8 @@ const navigate = useNavigate()
           <p> Price:${price}</p>
         </div>
       </Link>
-      <button onClick={()=>{ navigate('/Details:id')}} className='btn border-purple-800 2px solid  rounded-full  text-purple-950'> View Details </button>
+      <Link to={`/Details/${product_id}`}> <button  className='btn border-purple-800 2px solid  rounded-full  text-purple-950'> View Details </button> </Link> 
+      
         </div>
         </>
     );
