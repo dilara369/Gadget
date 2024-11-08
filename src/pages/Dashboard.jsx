@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Heading from "../component/Heading";
-import { getAllcard } from "../Storage";
-import { NavLink } from "react-router-dom";
+import { getAllcard, removeCard } from "../Storage";
+import { NavLink, } from "react-router-dom";
 import ShoppingCard from "../component/ShoppingCard";
 
 const Dashboard = () => {
-
-    const [card, setCard] = useState([])
+        
+    const [card, setCard] = useState()
     useEffect(() => {
         const wantAdd =getAllcard()
       setCard(wantAdd)
     }, [])
   
-    const handleRemove = id => {
-      removeCard(id)
+    const handleRemove = product_id => {
+      removeCard(product_id)
       const wantAdd = getAllcard()
       setCard(wantAdd)
     }
@@ -33,9 +33,9 @@ const Dashboard = () => {
     <NavLink
         role="tab"
         className={({ isActive }) =>
-            `tab ${isActive ? 'bg-blue-400' : 'bg-transparent'} relative top-1/2 shadow-xl border border-white px-8 py-2 rounded-full text-white text-center`
+            `tab ${isActive ?'bg-white , text-purple-800 , font-bold ':'bg-purple-600'} relative top-1/2 shadow-xl border border-white px-8 py-2 rounded-full text-white text-center`
         }
-        to="/shopping"
+        to="/dashboard/Shopping"
     >
         Cart
     </NavLink>
@@ -43,21 +43,17 @@ const Dashboard = () => {
     <NavLink
         role="tab"
         className={({ isActive }) =>
-            `tab ${isActive ? 'bg-blue-400' : 'bg-transparent'} relative top-1/2 shadow-xl border border-white px-8 py-2 rounded-full text-white`
+            `tab ${isActive ? 'bg-white , text-purple-800 , font-bold ':'bg-purple-600'} relative top-1/2 shadow-xl border border-white px-8 py-2 rounded-full text-white`
         }
         to="/wishlist"
     >
         Wishlist
     </NavLink>
 </div>
-
-    
-
-
-       
+     
       </div>
 
-<ShoppingCard></ShoppingCard>
+<ShoppingCard handleRemove={handleRemove} key={card.product_id} card={card} ></ShoppingCard>
 
     </div>
   );

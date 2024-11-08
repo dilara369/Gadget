@@ -1,6 +1,7 @@
 import { NavLink ,Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { GiSelfLove } from "react-icons/gi";
+
 const Navbar = () => {
     return (
         <div className="w-11/12 mx-auto">
@@ -60,6 +61,17 @@ const Navbar = () => {
                   
                   Dashboard
                 </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    ` font-bold ${
+                      isActive ? "text-warning" : "hover:text-warning"
+                    }`
+                  }
+                  to="/About Us"
+                >
+                  
+                  About Us
+                </NavLink>
               </ul>
             </div>
             <Link to="/" class=" text-xl">
@@ -100,6 +112,18 @@ const Navbar = () => {
                   
                   Dashboard
                 </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    ` font-bold ${
+                      isActive ? "text-warning" : "hover:text-warning"
+                    }`
+                  }
+                  to="/About Us"
+                >
+                  
+                  About Us
+                </NavLink>
+
             </ul>
           </div>
           <div className="navbar-end flex gap-3" >
@@ -115,3 +139,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

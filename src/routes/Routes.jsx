@@ -6,6 +6,8 @@ import Home from "../Pages/Home";
 import ProductCard from "../component/ProductCard";
 import CardDetails from "../component/CardDetails";
 import ShoppingCard from "../component/ShoppingCard";
+import AboutUs from "../pages/AboutUs";
+import NotFound from "../component/404/NotFound";
 
 
 const router = createBrowserRouter([
@@ -49,14 +51,27 @@ const router = createBrowserRouter([
     {
         path:"/dashboard",
         element:<Dashboard></Dashboard>,
+        
         children:[
           {
-            path:"/dashboard/:product_id",
+            path:"/dashboard/Shopping",
             element: <ShoppingCard></ShoppingCard>,
-            loader:()=> fetch("../products.json"),
+            // loader:()=> fetch("../products.json"),
+            
           },
         ]
     },
+
+{
+  path:'/About Us',
+  element:<AboutUs></AboutUs>,
+},
+
+{
+  path:'/404',
+  element:<NotFound></NotFound>,
+}
+
 
     ]
     },
