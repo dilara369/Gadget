@@ -26,14 +26,19 @@ const CardDetails = () => {
     setIsadd(true);
     // react can read again and done fullfill so i put it here again 
   };
+  const handeLove = (card) => {
+    addCard(card);
+    setIsadd(true);
+    // react can read again and done fullfill so i put it here again 
+  };
 
   return (
-    <div className=" relative hero h-[300px] bg-[#9538E2] pb-52 ">
+    <div className=" relative hero h-[300px] bg-[#9538E2] pb-56 ">
       <Heading
         title="Product Details"
         subtitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
       ></Heading>
-      <div className=" absolute top-1/3 flex gap-8 bg-white rounded-xl border 2px solid border-blue-400 p-5 ">
+      <div className=" absolute top-1/4  flex gap-8 bg-white rounded-xl border 2px solid border-blue-400 p-5  ">
         <div>
           <img className="rounded-xl h-full" src={card.product_image} alt="" />
         </div>
@@ -68,7 +73,7 @@ const CardDetails = () => {
             <button
              disabled={isadd}
             onClick={()=> handeAdd(card)} className="bg-purple-900 rounded-full text-white px-5 py-1 flex items-center gap-2">Add To Cart  <FaCartArrowDown />  </button>
-            <FcLike size={35} />
+            <FcLike  onClick={()=> handeLove(card)}   size={35} />
             
           </div>
         </div>

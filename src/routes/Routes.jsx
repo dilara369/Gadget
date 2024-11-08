@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Statistic from "../Pages/Statistic";
-import Dashboard from "../Pages/Dashboard";
+import Dashboard from "../pages/Dashboard";
 import Home from "../Pages/Home";
 import ProductCard from "../component/ProductCard";
 import CardDetails from "../component/CardDetails";
+import ShoppingCard from "../component/ShoppingCard";
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,13 @@ const router = createBrowserRouter([
     {
         path:"/dashboard",
         element:<Dashboard></Dashboard>,
+        children:[
+          {
+            path:"/dashboard/:product_id",
+            element: <ShoppingCard></ShoppingCard>,
+            loader:()=> fetch("../products.json"),
+          },
+        ]
     },
 
     ]

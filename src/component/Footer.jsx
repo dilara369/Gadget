@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
 
 
-<footer className="footer flex flex-col p-10 bg-gray-200 text-gray-700 mt-10">
+<footer className="footer flex flex-col p-10 bg-gray-200 text-gray-700 mt-28">
 
                    <div className='flex flex-col justify-center items-center w-full '>
 
