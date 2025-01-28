@@ -41,11 +41,11 @@ const Dashboard = () => {
     const handleSort = () => {
         
         // sort by price
-        const sorted = [...card].sort((a, b) => b.price - a.price)
+        const sorted = [...card].sort((a, b) => a.price - b.price)
         setCard(sorted)
   }
 
-
+  
   return (
     <div>
       <div className=" relative hero h-[200px] bg-[#9538E2]  border solid rounded-xl  ">
