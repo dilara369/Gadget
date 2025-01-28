@@ -1,6 +1,6 @@
-# Turkish Language Learning Web App
+# Gadget 
 
-Welcome to the **Turkish Language Learning Web App**! This web application is designed to help users learn and practice the Turkish language through interactive lessons and quizzes. It features a modern, responsive design powered by **React**, **Tailwind CSS**, and **DaisyUI** for an enhanced user experience.
+Welcome to the **Gadget House**! This web application is designed to help users learn and practice the Turkish language through interactive lessons and quizzes. It features a modern, responsive design powered by **React**, **Tailwind CSS**, and **DaisyUI** for an enhanced user experience.
 
 ## Live Demo
 
